@@ -46,7 +46,6 @@
         width: 80vw;
     }
     .navigation{
-        width: 8vw;
         margin: 0 5px;
         font-size: xxx-large;
         height: 100%;
