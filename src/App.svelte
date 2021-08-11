@@ -3,7 +3,7 @@
 	import { GET } from './http/tumblr-api';
 	import Slideshow from './components/Slideshow.svelte';
 
-	let imageList = [];
+	let imageList = null;
 
 	const parseResponse = (response) => {
 		const posts = response['response']['posts'];
@@ -34,10 +34,10 @@
 </script>
 
 <main class='pure-u-3-3'>
-	{#if imageList}
+	{#if !!imageList}
 		<Slideshow {imageList} />
 	{:else}
-		<p>No Images to show</p>
+		<p class="noimages">No Images available.</p>
 	{/if}
 </main>
 
@@ -48,6 +48,11 @@
 		margin: 0 auto;
 		padding: 0;
 		height: 80vh;
-		width: 90vw;
+		width: 100vw;
+	}
+	.noimages{
+		vertical-align: center;
+		margin: 25%;
+		font-size: x-large;
 	}
 </style>
