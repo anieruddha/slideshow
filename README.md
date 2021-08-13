@@ -1,4 +1,4 @@
-# slideshow assignment
+# slideshow example in Svelte
 
 ####Install the dependencies...
 
@@ -25,10 +25,4 @@ npm run build
 
 App will be running on [localhost:5000](http://localhost:5000). 
 
-
-###Assumption & Comments
-
-Addition to code using pure-css & font-awesome library. Using `svelte` framework.
-
-Added unit test cases for component. 
 
