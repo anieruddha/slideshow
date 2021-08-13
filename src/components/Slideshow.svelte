@@ -9,7 +9,6 @@
 
     $: {
         if(!!curImg){
-            imageList
             const curEle = document.getElementById(curImg.id);
             if(!!curEle) curEle.scrollIntoView();
         }
